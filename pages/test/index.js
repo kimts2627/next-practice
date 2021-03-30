@@ -1,7 +1,18 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Test() {
+
+  const rotateText = (e) => {
+    if(!e.target.style.color || e.target.style.color === 'black') {
+      e.target.style.color = 'red';
+    }
+    else {
+      e.target.style.color = 'black';
+    }
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -11,12 +22,15 @@ export default function Test() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          WWWelcome to <a href="/">Next.js!</a>
+          WWWelcome to <Link href='/'><a>Next.js!</a></Link>
         </h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
-          <code className={styles.code}>pages/test/index.js</code>
+          <code
+            className={styles.code}
+            onClick={(e) => rotateText(e)}
+          >pages/test/index.js</code>
         </p>
 
         <div className={styles.grid}>
