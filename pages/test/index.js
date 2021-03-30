@@ -1,22 +1,22 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
-export default function Home() {
+export default function Test() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Create Next App/Test</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          WWWelcome to <a href="/test">Next.js!</a>
+          WWWelcome to <a href="/">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          <code className={styles.code}>pages/test/index.js</code>
         </p>
 
         <div className={styles.grid}>
@@ -61,5 +61,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
