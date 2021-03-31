@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Dummy from '../components/dummy'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -8,6 +9,8 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Dummy/>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
